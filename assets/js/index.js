@@ -290,7 +290,7 @@ document.querySelector(".js-activate-global-blending").addEventListener("click",
 // up-arrow
 $(document).ready(function () {
   $(window).scroll(function () {
-      if ($(window).scrollTop() > 350) {
+      if ($(window).scrollTop() > 750) {
           $('#up-arrow').css('opacity', '1')
           $('#up-arrow').css('visibility', 'visible')
       } else {

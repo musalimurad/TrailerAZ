@@ -212,7 +212,7 @@ body {
 
     ul {
         margin-bottom: 0;
-        padding-top: 130px;
+        padding-top: 60px;
 
         li {
             list-style: none;
@@ -270,11 +270,11 @@ body {
 
     .all-inform{
         z-index: 99;
-        margin-top: 9rem;
+        margin-top: 10rem;
         .play-ico {
             display: flex;
             align-items: center;
-    
+            padding-bottom: 40px;
             i {
                 font-size: 50px;
                 color: #fff;
@@ -295,7 +295,6 @@ body {
         }
     
         .movie-head {
-            padding-top: 30px;
     
             h5 {
                 color: #fff;
@@ -319,6 +318,7 @@ body {
                 ul {
                     color: #fff;
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     padding-top: 17px;
     
@@ -499,7 +499,6 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 1.5em;
   }
   
   h2 {
@@ -818,7 +817,7 @@ footer {
         left: 0;
         width: 100%;
         overflow: hidden;
-        height: 60vh;
+        height: 100vh;
         background: -webkit-gradient(linear, left top, left bottom, from(#131720), to(#131720));
         background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
         opacity: 0.8;
@@ -834,7 +833,7 @@ footer {
 @media(min-width:220px) and (max-width:360px){
     .movie-information {
        
-    margin-top: 0px;
+    
         .overlay {
             position: absolute;
             width: 100%;
@@ -844,9 +843,11 @@ footer {
             background: linear-gradient(#131720a3, #131720a1, #131720);
         }
     
+       .all-inform{
+           margin-top: 5rem;
         .play-ico {
             z-index: 99;
-            margin-top: 7rem;
+            padding-bottom: 30px;
             display: flex;
             align-items: center;
     
@@ -890,23 +891,16 @@ footer {
                     }
                 }
     
-                ul {
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    padding-top: 17px;
-                    flex-wrap: wrap;
-    
-                    li {
-    
-                    }
-                }
+                
             }
         }
+       }
     }
 }
 
-@media(min-width:812px) and (max-width:992px){
+
+
+@media(min-width:576px) and (max-width:768px){
     .movie-information {
         background-image: url(https://uploads.jovemnerd.com.br/wp-content/uploads/2020/07/NC_735_Dark_GIGA_3025x1362.jpg);
         background-repeat: no-repeat;
@@ -926,7 +920,7 @@ footer {
     
         .all-inform{
             z-index: 99;
-            margin-top: 5rem;
+            margin-top: 5rem  !important;
             .play-ico {
                 display: flex;
                 align-items: center;
@@ -951,7 +945,7 @@ footer {
             }
         
             .movie-head {
-                padding-top: 10px;
+                // padding-top: 10px;
         
                 h5 {
                     color: #fff;

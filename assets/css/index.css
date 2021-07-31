@@ -1288,6 +1288,12 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-attachment: fixed;
   background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
 }
@@ -1296,7 +1302,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 140px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

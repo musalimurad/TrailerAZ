@@ -227,7 +227,7 @@ body {
 
 #Menu-content ul {
   margin-bottom: 0;
-  padding-top: 130px;
+  padding-top: 60px;
 }
 
 #Menu-content ul li {
@@ -285,7 +285,7 @@ body {
 
 .movie-information .all-inform {
   z-index: 99;
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 
 .movie-information .all-inform .play-ico {
@@ -295,6 +295,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 
 .movie-information .all-inform .play-ico i {
@@ -314,10 +315,6 @@ body {
   color: #fff;
   font-weight: 600;
   padding-left: 10px;
-}
-
-.movie-information .all-inform .movie-head {
-  padding-top: 30px;
 }
 
 .movie-information .all-inform .movie-head h5 {
@@ -349,6 +346,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -520,7 +519,6 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 1.5em;
 }
 
 h2 {
@@ -847,7 +845,7 @@ footer .overlay {
   left: 0;
   width: 100%;
   overflow: hidden;
-  height: 60vh;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#131720), color-stop(#0c0f14), color-stop(#0d1016), to(#131720));
   background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
   opacity: 0.8;
@@ -856,9 +854,6 @@ footer .overlay {
 }
 
 @media (min-width: 220px) and (max-width: 360px) {
-  .movie-information {
-    margin-top: 0px;
-  }
   .movie-information .overlay {
     position: absolute;
     width: 100%;
@@ -868,9 +863,12 @@ footer .overlay {
     background: -webkit-gradient(linear, left top, left bottom, from(#131720a3), color-stop(#131720a1), to(#131720));
     background: linear-gradient(#131720a3, #131720a1, #131720);
   }
-  .movie-information .play-ico {
+  .movie-information .all-inform {
+    margin-top: 5rem;
+  }
+  .movie-information .all-inform .play-ico {
     z-index: 99;
-    margin-top: 7rem;
+    padding-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -878,30 +876,30 @@ footer .overlay {
         -ms-flex-align: center;
             align-items: center;
   }
-  .movie-information .play-ico i {
+  .movie-information .all-inform .play-ico i {
     font-size: 40px;
     color: #fff;
     -webkit-transition: .5s;
     transition: .5s;
   }
-  .movie-information .play-ico i:hover {
+  .movie-information .all-inform .play-ico i:hover {
     color: #1a4da7;
     cursor: pointer;
   }
-  .movie-information .play-ico span {
+  .movie-information .all-inform .play-ico span {
     font-size: 16px;
     color: #fff;
     font-weight: 600;
     padding-left: 10px;
   }
-  .movie-information .movie-head {
+  .movie-information .all-inform .movie-head {
     z-index: 99;
   }
-  .movie-information .movie-head h5 {
+  .movie-information .all-inform .movie-head h5 {
     color: #fff;
     font-size: 30px;
   }
-  .movie-information .movie-head .content {
+  .movie-information .all-inform .movie-head .content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -911,27 +909,15 @@ footer .overlay {
     display: flex;
     padding-bottom: -20px;
   }
-  .movie-information .movie-head .content span {
+  .movie-information .all-inform .movie-head .content span {
     color: #fff;
   }
-  .movie-information .movie-head .content span i {
+  .movie-information .all-inform .movie-head .content span i {
     color: #1a4da7;
-  }
-  .movie-information .movie-head .content ul {
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 17px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
-@media (min-width: 812px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .movie-information {
     background-image: url(https://uploads.jovemnerd.com.br/wp-content/uploads/2020/07/NC_735_Dark_GIGA_3025x1362.jpg);
     background-repeat: no-repeat;
@@ -951,7 +937,7 @@ footer .overlay {
   }
   .movie-information .all-inform {
     z-index: 99;
-    margin-top: 5rem;
+    margin-top: 5rem  !important;
   }
   .movie-information .all-inform .play-ico {
     display: -webkit-box;
@@ -976,9 +962,6 @@ footer .overlay {
     color: #fff;
     font-weight: 600;
     padding-left: 10px;
-  }
-  .movie-information .all-inform .movie-head {
-    padding-top: 10px;
   }
   .movie-information .all-inform .movie-head h5 {
     color: #fff;

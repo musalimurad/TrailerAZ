@@ -1226,12 +1226,14 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: center;
     background-attachment: fixed;
     background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
 
     .cover-text {
         display: flex;
-        padding-top: 140px;
+        
         justify-content: center;
         margin: auto;
 

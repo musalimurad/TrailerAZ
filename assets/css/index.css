@@ -1632,7 +1632,7 @@
 .actors .actor-detail .detail-img img {
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
@@ -1760,7 +1760,7 @@ footer .overlay {
   left: 0;
   width: 100%;
   overflow: hidden;
-  height: 60vh;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#131720), color-stop(#0c0f14), color-stop(#0d1016), to(#131720));
   background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
   opacity: 0.8;
@@ -1804,6 +1804,9 @@ footer .overlay {
   }
   .new-film .tag-content .bottom p {
     display: none;
+  }
+  .actors .detail-img img {
+    height: 200px !important;
   }
 }
 
@@ -1927,6 +1930,9 @@ footer .overlay {
   }
   .new-film .tag-content .bottom p {
     display: none;
+  }
+  .actors .detail-img img {
+    height: 200px !important;
   }
 }
 

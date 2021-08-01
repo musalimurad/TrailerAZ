@@ -1550,10 +1550,10 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
 
         .detail-img {
             position: relative;
-
+            
             img {
                 filter: brightness(0.5);
-                height: 400px;
+                height: 350px;
                 width: 100%;
 
             }
@@ -1681,7 +1681,7 @@ footer {
         left: 0;
         width: 100%;
         overflow: hidden;
-        height: 60vh;
+        height: 100vh;
         background: -webkit-gradient(linear, left top, left bottom, from(#131720), to(#131720));
         background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
         opacity: 0.8;
@@ -1766,6 +1766,14 @@ footer {
         // left: 84% !important;
 
 
+    }
+
+    .actors{
+        .detail-img{
+            img{
+                height: 200px !important;
+            }
+        }
     }
 }
 
@@ -2049,6 +2057,14 @@ footer {
                 p {
                     display: none;
                 }
+            }
+        }
+    }
+
+    .actors{
+        .detail-img{
+            img{
+                height: 200px !important;
             }
         }
     }

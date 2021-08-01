@@ -983,6 +983,12 @@ footer {
     }
 }
 
+@media screen and (max-width:900px){
+    .col{
+        flex: 100%;
+    }
+}
+
 @media(min-width:220px) and (max-width:991px) {
     .Header {
         .Header-All {

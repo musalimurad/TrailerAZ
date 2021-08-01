@@ -998,6 +998,14 @@ footer .overlay {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
 @media (min-width: 220px) and (max-width: 991px) {
   .Header .Header-All {
     display: none;

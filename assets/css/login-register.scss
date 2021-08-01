@@ -1,0 +1,452 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+// ------------Header-Start-----------------
+
+.Header {
+    background-color: #131720;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .Header-All {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        display: contents;
+
+        .Header-Ico {
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                color: #fff;
+                font-weight: 400;
+
+                i {
+                    color: #1a4da7;
+                }
+            }
+        }
+
+        .Header-Nav {
+            display: contents;
+
+            ul {
+                display: flex;
+                color: #fff;
+                margin-top: 12px;
+
+                li {
+                    list-style: none;
+                    margin-left: 16px;
+                    cursor: pointer;
+                    transition: .4s ease-in-out;
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    &:hover {
+                        i {
+                            transition: .4s;
+                            transform: rotate(-360deg);
+                        }
+                    }
+
+                    i {
+                        font-size: 23px;
+                    }
+
+                    &:hover {
+                        color: #1a4da7;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        transition: .4s ease-in-out;
+
+                        &:hover {
+                            color: #1a4da7;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.Responsive-Header {
+    background-color: #131720;
+    padding: 8px;
+    display: none;
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    transition: .4s ease-in-out;
+    z-index: 9999;
+
+    .All-Responsive {
+        display: flex;
+        align-items: center;
+
+        .Responsive-Logo {
+
+            a {
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            h4 {
+                color: #fff;
+                font-weight: bold;
+                margin-top: 5px;
+                font-size: 17px;
+
+                i {
+                    color: #1a4da7;
+                }
+            }
+        }
+
+        .Navbar-Ico {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                position: absolute;
+                overflow: hidden;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+
+            ul li {
+                list-style: none;
+                position: absolute;
+                background: #fff;
+                width: 100%;
+                height: 3px;
+                transform: translateY(-50%);
+                transition: 0.5s;
+            }
+
+            ul li:nth-of-type(1) {
+                top: 20%;
+            }
+
+            ul li:nth-of-type(2) {
+                top: 50%;
+            }
+
+            ul li:nth-of-type(3),
+            ul li:nth-of-type(4) {
+                width: 50%;
+                top: 80%;
+            }
+
+            ul li:nth-of-type(1),
+            ul li:nth-of-type(2),
+            ul li:nth-of-type(3) {
+                left: 0;
+            }
+
+            ul li:nth-of-type(4) {
+                right: 0;
+            }
+
+            ul.active li:nth-of-type(1) {
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            ul.active li:nth-of-type(2) {
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+
+            ul.active li:nth-of-type(3) {
+                left: -50%;
+                opacity: 0;
+            }
+
+            ul.active li:nth-of-type(4) {
+                right: -50%;
+                opacity: 0;
+            }
+        }
+
+    }
+}
+
+#Menu-content {
+    background-color: #1b202c;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: .4s;
+    margin-top: 65px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    height: 0vh;
+
+    ul {
+        margin-bottom: 0;
+        padding-top: 60px;
+
+        li {
+            list-style: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 10px;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                color: #1a4da7;
+
+                i {
+                    transition: .4s ease-in-out;
+                    transform: rotate(360deg);
+                }
+
+                a {
+                    color: #1a4da7;
+                    font-size: 30px;
+                }
+            }
+
+            a {
+                transition: .4s ease-in-out;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// -------------Header-End---------------------
+
+
+
+// ------------- Login-Register start -----------
+
+
+.login-register{
+    background-image: url(https://dmitryvolkov.me/demo/flixtv/main/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    *,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  // min-height: 649px;
+  position: relative;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 90px 70px 50px 70px;
+  
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  
+  backface-visibility: hidden;
+  transition: all 0.4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #1161ee;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #fff;
+  border-color: #1161ee;
+}
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.login-form .group {
+  margin-bottom: 15px;
+  
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+  &:focus{
+    outline: none;
+  }
+}
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-form .group input[data-type="password"] {
+  -webkit-text-security: circle;
+}
+.login-form .group .label {
+  color: #fff;
+  font-size: 12px;
+}
+.login-form .group .button {
+  background: #1161ee;
+}
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+  color: #1161ee;
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+
+}
+
+// ------------- Login-register end---------------
+
+
+// -------------- Responsive Start ---------------
+
+@media(min-width:220px) and (max-width:991px) {
+    .Header {
+        .Header-All {
+            display: none;
+        }
+
+    }
+
+    .Responsive-Header {
+        display: block;
+    }
+
+    #Menu-content {
+        // margin-top: 64px;
+
+        ul {
+
+            li {
+                font-size: 18px;
+                padding-top: 0px;
+                padding-bottom: 9px;
+            }
+        }
+    }
+
+}
+
+// --------------- Responsive End -----------------

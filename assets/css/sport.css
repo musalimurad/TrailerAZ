@@ -1,0 +1,372 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+.Header {
+  background-color: #131720;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.Header .Header-All {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: contents;
+}
+
+.Header .Header-All .Header-Ico a {
+  text-decoration: none;
+}
+
+.Header .Header-All .Header-Ico h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.Header .Header-All .Header-Ico h1 i {
+  color: #1a4da7;
+}
+
+.Header .Header-All .Header-Nav {
+  display: contents;
+}
+
+.Header .Header-All .Header-Nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.Header .Header-All .Header-Nav ul li {
+  list-style: none;
+  margin-left: 16px;
+  cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Header .Header-All .Header-Nav ul li:hover i {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.Header .Header-All .Header-Nav ul li i {
+  font-size: 23px;
+}
+
+.Header .Header-All .Header-Nav ul li:hover {
+  color: #1a4da7;
+}
+
+.Header .Header-All .Header-Nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.Header .Header-All .Header-Nav ul li a:hover {
+  color: #1a4da7;
+}
+
+.Responsive-Header {
+  background-color: #131720;
+  padding: 8px;
+  display: none;
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  z-index: 9999;
+}
+
+.Responsive-Header .All-Responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Responsive-Header .All-Responsive .Responsive-Logo a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.Responsive-Header .All-Responsive .Responsive-Logo h4 {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.Responsive-Header .All-Responsive .Responsive-Logo h4 i {
+  color: #1a4da7;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li {
+  list-style: none;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(1) {
+  top: 20%;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(2) {
+  top: 50%;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(3),
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(4) {
+  width: 50%;
+  top: 80%;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(1),
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(2),
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(3) {
+  left: 0;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul li:nth-of-type(4) {
+  right: 0;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul.active li:nth-of-type(1) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul.active li:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul.active li:nth-of-type(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.Responsive-Header .All-Responsive .Navbar-Ico ul.active li:nth-of-type(4) {
+  right: -50%;
+  opacity: 0;
+}
+
+#Menu-content {
+  background-color: #1b202c;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-top: 65px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  height: 0vh;
+}
+
+#Menu-content ul {
+  margin-bottom: 0;
+  padding-top: 60px;
+}
+
+#Menu-content ul li {
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+#Menu-content ul li:hover {
+  color: #1a4da7;
+}
+
+#Menu-content ul li:hover i {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#Menu-content ul li:hover a {
+  color: #1a4da7;
+  font-size: 30px;
+}
+
+#Menu-content ul li a {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.page {
+  background: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+.countdown-col {
+  background: url(https://dmitryvolkov.me/demo/flixtv/main/img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.time {
+  color: #fff;
+  text-transform: uppercase;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.time span {
+  padding: 0 14px;
+  font-size: 10px;
+}
+
+.time span div {
+  font-size: 40px;
+}
+
+.newslatter {
+  width: 90%;
+}
+
+.newslatter h4 {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.newslatter input,
+.newslatter button {
+  display: block;
+  margin: 12px auto;
+  width: 100%;
+  max-width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.newslatter-button {
+  background: linear-gradient(125deg, #3498db, #34495e);
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.newslatter-button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+  .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 991px) {
+  .Header .Header-All {
+    display: none;
+  }
+  .Responsive-Header {
+    display: block;
+  }
+  #Menu-content ul li {
+    font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 9px;
+  }
+}
+/*# sourceMappingURL=sport.css.map */

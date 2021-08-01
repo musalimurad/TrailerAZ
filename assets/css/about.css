@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #131720;
+}
+
 .Header {
   background-color: #131720;
   padding: 8px;
@@ -14,18 +18,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 9999;
 }
 
 .Header .Header-All {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -99,7 +96,6 @@
   display: none;
   top: 0%;
   width: 100%;
-  position: fixed;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
   z-index: 9999;
@@ -213,8 +209,6 @@
   width: 100%;
   -webkit-transition: .4s;
   transition: .4s;
-  margin-top: 65px;
-  position: fixed;
   width: 100%;
   height: 100vh;
   z-index: 99999;
@@ -258,6 +252,83 @@
   transition: .4s ease-in-out;
   text-decoration: none;
   color: #fff;
+}
+
+.about {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about .head-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about .text-content p {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.about .contact h2 {
+  color: #fff;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.about .contact textarea {
+  display: block;
+  color: #fff;
+  background-color: #131720;
+  border: 1px solid #1a4da7;
+  color: #fff;
+  font-size: 15px;
+  margin: auto;
+  padding-left: 7px;
+  padding-top: 9px;
+  margin-top: 10px;
+}
+
+.about .contact textarea:focus {
+  outline: none;
+}
+
+.about .contact input {
+  display: block;
+  margin: auto;
+}
+
+.about .contact input:focus {
+  outline: none;
+}
+
+.about .contact .email {
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #131720;
+  border: 1px solid #1a4da7;
+  padding-left: 5px;
+}
+
+.about .contact .submit {
+  background-color: transparent;
+  border: 1px solid #1a4da7;
+  color: #1a4da7;
+  padding: 10px 80px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.about .contact .submit:hover {
+  background-color: #1a4da7;
+  color: #fff;
+  border: 1px dashed #fff;
 }
 
 footer {

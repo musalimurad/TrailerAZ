@@ -2,8 +2,13 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
 }
 
+body{
+    background-color: #131720;
+
+}
 
 // ------------Header-Start-----------------
 
@@ -12,15 +17,11 @@
     padding: 8px;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    position: fixed;
-    top: 0;
     width: 100%;
+    
     z-index: 9999;
 
     .Header-All {
-        display: flex;
-        margin: auto;
         align-items: center;
         display: contents;
 
@@ -92,7 +93,6 @@
     display: none;
     top: 0%;
     width: 100%;
-    position: fixed;
     transition: .4s ease-in-out;
     z-index: 9999;
 
@@ -196,8 +196,6 @@
     visibility: hidden;
     width: 100%;
     transition: .4s;
-    margin-top: 65px;
-    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 99999;
@@ -244,9 +242,80 @@
 
 // -------------  About start -------------
 
+.about{
+    width: 100%;
+overflow: hidden;
+    .head-text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text-content{
+        p{
+            color: #fff;
+            margin-top: 30px;
 
+        }
+    }
+    .contact{
+        h2{
+            color: #fff;
+            text-align: center;
+            margin: 30px auto;
+        }
+        textarea{
+            display: block;
+            color: #fff;
+            background-color: #131720;
+            border: 1px solid #1a4da7;
+            color: #fff;
+            font-size: 15px;
+            margin: auto;
+            padding-left: 7px;
+            padding-top: 9px;
+            &:focus{
+                outline: none;
+            }
+            margin-top: 10px;
+        }
+        input{
+            display: block;
+            margin: auto;
+            &:focus{
+                outline: none;
+            }
+        }
+        .email{
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #131720;
+            border: 1px solid #1a4da7;
+            padding-left: 5px;
+            
+        }
+        .submit{
+            background-color: transparent;
+            border: 1px solid #1a4da7;
+            color: #1a4da7;
+            padding: 10px 80px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: .5s;
+            &:hover{
+                background-color: #1a4da7;
+                color: #fff;
+                border: 1px dashed #fff;
+            }
+        }
+    }
+}
 
 // ------------- About End ----------------
+
 
 
  // ----------------Footer start---------------

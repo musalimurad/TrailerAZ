@@ -289,6 +289,11 @@ a {
   padding: 90px 70px 50px 70px;
   
 }
+a{
+    &:hover{
+        color: #1a4da7;
+    }
+}
 .login-html .sign-in-htm,
 .login-html .sign-up-htm {
   top: 0;

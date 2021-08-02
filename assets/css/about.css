@@ -18,11 +18,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9999;
 }
 
 .Header .Header-All {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -36,6 +43,7 @@ body {
 .Header .Header-All .Header-Ico h1 {
   color: #fff;
   font-weight: 400;
+  font-size: 32px;
 }
 
 .Header .Header-All .Header-Ico h1 i {
@@ -61,7 +69,9 @@ body {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .Header .Header-All .Header-Nav ul li:hover i {
@@ -72,7 +82,7 @@ body {
 }
 
 .Header .Header-All .Header-Nav ul li i {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .Header .Header-All .Header-Nav ul li:hover {

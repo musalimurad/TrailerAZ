@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -33,6 +33,7 @@
                 color: #fff;
                 font-weight: 400;
                 font-size: 32px;
+
                 i {
                     color: #1a4da7;
                 }
@@ -56,6 +57,7 @@
                     font-weight: 500;
                     letter-spacing: 1.5px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
                     &:hover {
                         i {
                             transition: .4s;
@@ -247,7 +249,7 @@
 // ------------- Login-Register start -----------
 
 
-.login-register{
+.login-register {
     background-image: url(https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1902&q=80);
     background-position: center;
     background-repeat: no-repeat;
@@ -255,170 +257,191 @@
     width: 100%;
     height: 97vh;
     overflow: hidden;
+
     *,
-:after,
-:before {
-  box-sizing: border-box;
-}
-.clearfix:after,
-.clearfix:before {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-  display: block;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.login-wrap {
-  width: 100%;
-  margin: auto;
-  max-width: 525px;
-  // min-height: 649px;
-  position: relative;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.login-html {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding: 90px 70px 50px 70px;
-  
-}
-a{
-    &:hover{
-        color: #1a4da7;
+    :after,
+    :before {
+        box-sizing: border-box;
     }
-}
-.login-html .sign-in-htm,
-.login-html .sign-up-htm {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  transform: rotateY(180deg);
-  
-  backface-visibility: hidden;
-  transition: all 0.4s linear;
-}
-.login-html .sign-in,
-.login-html .sign-up,
-.login-form .group .check {
-  display: none;
-}
-.login-html .tab,
-.login-form .group .label,
-.login-form .group .button {
-  text-transform: uppercase;
-}
-.login-html .tab {
-  font-size: 22px;
-  margin-right: 15px;
-  color: #1161ee;
-  padding-bottom: 5px;
-  margin: 0 15px 10px 0;
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-}
-.login-html .sign-in:checked + .tab,
-.login-html .sign-up:checked + .tab {
-  color: #fff;
-  border-color: #1161ee;
-}
-.login-form {
-  min-height: 345px;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-.login-form .group {
-  margin-bottom: 15px;
-  
-}
-.login-form .group .label,
-.login-form .group .input,
-.login-form .group .button {
-  width: 100%;
-  color: #fff;
-  display: block;
-  &:focus{
-    outline: none;
-  }
-}
-.login-form .group .input,
-.login-form .group .button {
-  border: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-}
-.login-form .group input[data-type="password"] {
-  -webkit-text-security: circle;
-}
-.login-form .group .label {
-  color: #fff;
-  font-size: 12px;
-}
-.login-form .group .button {
-  background: #1161ee;
-}
-.login-form .group label .icon {
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  position: relative;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-}
-.login-form .group label .icon:before,
-.login-form .group label .icon:after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  transition: all 0.2s ease-in-out 0s;
-}
-.login-form .group label .icon:before {
-  left: 3px;
-  width: 5px;
-  bottom: 6px;
-  transform: scale(0) rotate(0);
-}
-.login-form .group label .icon:after {
-  top: 6px;
-  right: 0;
-  transform: scale(0) rotate(0);
-}
-.login-form .group .check:checked + label {
-  color: #fff;
-}
 
-.login-form .group .check:checked + label .icon:before {
-  transform: scale(1) rotate(45deg);
-}
-.login-form .group .check:checked + label .icon:after {
-  transform: scale(1) rotate(-45deg);
-}
-.login-html
-  .sign-in:checked
-  + .tab
-  + .sign-up
-  + .tab
-  + .login-form
-  .sign-in-htm {
-  transform: rotate(0);
-  color: #1161ee;
-}
-.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
-  transform: rotate(0);
-}
+    .clearfix:after,
+    .clearfix:before {
+        content: "";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+        display: block;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .login-wrap {
+        width: 100%;
+        margin: auto;
+        max-width: 525px;
+        // min-height: 649px;
+        position: relative;
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .login-html {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 90px 70px 50px 70px;
+
+    }
+
+    a {
+        &:hover {
+            color: #1a4da7;
+        }
+    }
+
+    .login-html .sign-in-htm,
+    .login-html .sign-up-htm {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        transform: rotateY(180deg);
+
+        backface-visibility: hidden;
+        transition: all 0.4s linear;
+    }
+
+    .login-html .sign-in,
+    .login-html .sign-up,
+    .login-form .group .check {
+        display: none;
+    }
+
+    .login-html .tab,
+    .login-form .group .label,
+    .login-form .group .button {
+        text-transform: uppercase;
+    }
+
+    .login-html .tab {
+        font-size: 22px;
+        margin-right: 15px;
+        color: #1161ee;
+        padding-bottom: 5px;
+        margin: 0 15px 10px 0;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+    }
+
+    .login-html .sign-in:checked+.tab,
+    .login-html .sign-up:checked+.tab {
+        color: #fff;
+        border-color: #1161ee;
+    }
+
+    .login-form {
+        min-height: 345px;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    .login-form .group {
+        margin-bottom: 15px;
+
+    }
+
+    .login-form .group .label,
+    .login-form .group .input,
+    .login-form .group .button {
+        width: 100%;
+        color: #fff;
+        display: block;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .login-form .group .input,
+    .login-form .group .button {
+        border: none;
+        padding: 15px 20px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .login-form .group input[data-type="password"] {
+        -webkit-text-security: circle;
+    }
+
+    .login-form .group .label {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .login-form .group .button {
+        background: #1161ee;
+    }
+
+    .login-form .group label .icon {
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        position: relative;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .login-form .group label .icon:before,
+    .login-form .group label .icon:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .login-form .group label .icon:before {
+        left: 3px;
+        width: 5px;
+        bottom: 6px;
+        transform: scale(0) rotate(0);
+    }
+
+    .login-form .group label .icon:after {
+        top: 6px;
+        right: 0;
+        transform: scale(0) rotate(0);
+    }
+
+    .login-form .group .check:checked+label {
+        color: #fff;
+    }
+
+    .login-form .group .check:checked+label .icon:before {
+        transform: scale(1) rotate(45deg);
+    }
+
+    .login-form .group .check:checked+label .icon:after {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    .login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
+        transform: rotate(0);
+        color: #1161ee;
+    }
+
+    .login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+        transform: rotate(0);
+    }
 
 
 }
@@ -426,79 +449,79 @@ a{
 // ------------- Login-register end---------------
 
 
- // ----------------Footer start---------------
+// ----------------Footer start---------------
 
- footer {
-  background-image: url(https://www.savebutonu.com/wp-content/uploads/2020/04/sex-education-3-sezon.jpg);
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
+footer {
+    background-image: url(https://www.savebutonu.com/wp-content/uploads/2020/04/sex-education-3-sezon.jpg);
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .copyRight {
-      z-index: 999;
-      color: #fff;
-      text-align: center;
-      margin-top: 90px;
+    .copyRight {
+        z-index: 999;
+        color: #fff;
+        text-align: center;
+        margin-top: 90px;
 
-      h4 {
-          font-size: 30px;
-          filter: brightness(0.5);
-          transition: .5s ease-in-out;
-          cursor: default;
+        h4 {
+            font-size: 30px;
+            filter: brightness(0.5);
+            transition: .5s ease-in-out;
+            cursor: default;
 
-          &:hover {
-              filter: brightness(1);
-          }
-      }
+            &:hover {
+                filter: brightness(1);
+            }
+        }
 
-      i {
-          font-size: 30px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          transition: .4s;
-          color: #fff;
+        i {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: .4s;
+            color: #fff;
 
-          &:hover {
-              transform: rotate(-360deg);
-              color: #1a4da7;
+            &:hover {
+                transform: rotate(-360deg);
+                color: #1a4da7;
 
-          }
-      }
+            }
+        }
 
-      p {
-          transition: .5s ease-in-out;
-          cursor: default;
-          font-size: 18px;
+        p {
+            transition: .5s ease-in-out;
+            cursor: default;
+            font-size: 18px;
 
-          a {
-              text-decoration: none;
-              color: #fff;
-              transition: .5s ease-in-out;
-              font-weight: 600;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: .5s ease-in-out;
+                font-weight: 600;
 
-              &:hover {
-                  text-decoration: underline;
-              }
-          }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-      }
-  }
+        }
+    }
 
-  .overlay {
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      height: 100vh;
-      background: -webkit-gradient(linear, left top, left bottom, from(#131720), to(#131720));
-      background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
-      opacity: 0.8;
-      -webkit-filter: drop-shadow(20px);
-      filter: drop-shadow(20px);
-  }
+    .overlay {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        background: -webkit-gradient(linear, left top, left bottom, from(#131720), to(#131720));
+        background: linear-gradient(#131720, #0c0f14, #0d1016, #131720);
+        opacity: 0.8;
+        -webkit-filter: drop-shadow(20px);
+        filter: drop-shadow(20px);
+    }
 }
 
 // ----------------Footer End-----------------

@@ -456,13 +456,7 @@
           transform: scale(1) rotate(-45deg);
 }
 
-.login-register .login-html
-.sign-in:checked
-+ .tab
-+ .sign-up
-+ .tab
-+ .login-form
-.sign-in-htm {
+.login-register .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
   -webkit-transform: rotate(0);
           transform: rotate(0);
   color: #1161ee;

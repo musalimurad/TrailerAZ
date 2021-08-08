@@ -2,18 +2,18 @@
 //Responsive Header Hamburger
 var MenuContent = document.getElementById("Menu-content");
 $(document).ready(function () {
-    $(".navbar-button").click(function () {
-        $(".navbar-button").toggleClass("active");
-        if (MenuContent.style.opacity==1 && MenuContent.style.visibility=="visible" && MenuContent.style.height=="100vh") {
-            MenuContent.style.opacity=0;
-            MenuContent.style.visibility="hidden";
-            MenuContent.style.height="0vh";
-        } else {
-          MenuContent.style.opacity=1;
-          MenuContent.style.visibility="visible";
-          MenuContent.style.height="100vh";
-        }
-    });
+  $(".navbar-button").click(function () {
+    $(".navbar-button").toggleClass("active");
+    if (MenuContent.style.opacity == 1 && MenuContent.style.visibility == "visible" && MenuContent.style.height == "100vh") {
+      MenuContent.style.opacity = 0;
+      MenuContent.style.visibility = "hidden";
+      MenuContent.style.height = "0vh";
+    } else {
+      MenuContent.style.opacity = 1;
+      MenuContent.style.visibility = "visible";
+      MenuContent.style.height = "100vh";
+    }
+  });
 });
 // -------------------------------------------
 
@@ -21,80 +21,80 @@ $(document).ready(function () {
 // home slider start
 
 $('.all').slick({
-    centerMode: true,
-    centerPadding: '80px',
-    slidesToShow: 4,
-    autoplay:true,
-    speed:1000,
-    arrows:false,
-    infinite:true,
-    dots:false,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          arrows: false,
-          dots:false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          dots:false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-     
-      {
-        breakpoint: 430,
-        settings: {
-          arrows: false,
-          dots:false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
+  centerMode: true,
+  centerPadding: '80px',
+  slidesToShow: 4,
+  autoplay: true,
+  speed: 1000,
+  arrows: false,
+  infinite: true,
+  dots: false,
+  responsive: [{
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
       }
-    ]
-  });
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
 
-
-  (function(){
-    document.addEventListener("mousemove", pluginOne);
-    const element = document.querySelector("#PluginOne");
-    function pluginOne(e){
-        let w      = window.innerWidth/2;
-        let h      = window.innerHeight/2;
-        let mouseX = e.clientX;
-        let mouseY = e.clientY;
-        let depth1 = `${50-(mouseX-w)*0.8}% ${50-(mouseY-h)*0.8}%`;
-        let depth2 = `${50-(mouseX-w)*0.12}% ${50-(mouseY-h)*0.12}%`;
-        let depth3 = `${50-(mouseX-w)*0.14}% ${50-(mouseY-h)*0.14}%`;
-
-        let x = `${depth3}, ${depth2}, ${depth1}`;
-        element.style.backgroundPosition =x;
-
+    {
+      breakpoint: 430,
+      settings: {
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
     }
+  ]
+});
+
+
+(function () {
+  document.addEventListener("mousemove", pluginOne);
+  const element = document.querySelector("#PluginOne");
+
+  function pluginOne(e) {
+    let w = window.innerWidth / 2;
+    let h = window.innerHeight / 2;
+    let mouseX = e.clientX;
+    let mouseY = e.clientY;
+    let depth1 = `${50-(mouseX-w)*0.8}% ${50-(mouseY-h)*0.8}%`;
+    let depth2 = `${50-(mouseX-w)*0.12}% ${50-(mouseY-h)*0.12}%`;
+    let depth3 = `${50-(mouseX-w)*0.14}% ${50-(mouseY-h)*0.14}%`;
+
+    let x = `${depth3}, ${depth2}, ${depth1}`;
+    element.style.backgroundPosition = x;
+
+  }
 })();
 
 // home slider end
 
 // new film start
 
-function toggle(){
+function toggle() {
   var video = document.querySelector(".tag-video")
-  var exit =document.querySelector("iframe")
+  var exit = document.querySelector("iframe")
   video.classList.toggle("active");
-  exit.currentTime=0;
+  exit.currentTime = 0;
   var videos = $("#playerid").attr("src");
-$("#playerid").attr("src","");
-$("#playerid").attr("src",videos);
+  $("#playerid").attr("src", "");
+  $("#playerid").attr("src", videos);
 }
 
 
@@ -103,9 +103,9 @@ $("#playerid").attr("src",videos);
 // Slider start
 
 
-(function() {
+(function () {
 
-  var $$ = function(selector, context) {
+  var $$ = function (selector, context) {
     var context = context || document;
     var elements = context.querySelectorAll(selector);
     return [].slice.call(elements);
@@ -137,16 +137,16 @@ $("#playerid").attr("src",videos);
     var $prevControl;
 
     function setIDs() {
-      $slides.forEach(function($slide, index) {
+      $slides.forEach(function ($slide, index) {
         $slide.classList.add("fnc-slide-" + (index + 1));
       });
 
-      $controls.forEach(function($control, index) {
+      $controls.forEach(function ($control, index) {
         $control.setAttribute("data-slide", index + 1);
         $control.classList.add("fnc-nav__control-" + (index + 1));
       });
 
-      $controlsBgs.forEach(function($bg, index) {
+      $controlsBgs.forEach(function ($bg, index) {
         $bg.classList.add("fnc-nav__bg-" + (index + 1));
       });
     };
@@ -215,7 +215,7 @@ $("#playerid").attr("src",videos);
       performSliding(slideID);
     };
 
-    $controls.forEach(function($control) {
+    $controls.forEach(function ($control) {
       $control.addEventListener("click", controlClickHandler);
     });
 
@@ -225,36 +225,36 @@ $("#playerid").attr("src",videos);
       curSlide++;
       if (curSlide > numOfSlides) curSlide = 1;
 
-      autoSlidingTO = setTimeout(function() {
+      autoSlidingTO = setTimeout(function () {
         performSliding(curSlide);
       }, delay);
     };
 
     if (options.autoSliding || +options.autoSlidingDelay > 0) {
       if (options.autoSliding === false) return;
-      
+
       autoSlidingActive = true;
       setAutoslidingTO();
-      
+
       $slider.classList.add("m--with-autosliding");
       var triggerLayout = $slider.offsetTop;
-      
+
       var delay = +options.autoSlidingDelay || autoSlidingDelay;
       delay += slidingDelay + slidingAT;
-      
-      $progressAS.forEach(function($progress) {
+
+      $progressAS.forEach(function ($progress) {
         $progress.style.transition = "transform " + (delay / 1000) + "s";
       });
     }
-    
+
     $slider.querySelector(".fnc-nav__control:first-child").classList.add("m--active-control");
 
   };
 
-  var fncSlider = function(sliderSelector, options) {
+  var fncSlider = function (sliderSelector, options) {
     var $sliders = $$(sliderSelector);
 
-    $sliders.forEach(function($slider) {
+    $sliders.forEach(function ($slider) {
       _fncSliderInit($slider, options);
     });
   };
@@ -263,21 +263,23 @@ $("#playerid").attr("src",videos);
 }());
 
 
-fncSlider(".example-slider", {autoSlidingDelay: 4000});
+fncSlider(".example-slider", {
+  autoSlidingDelay: 4000
+});
 
 var $demoCont = document.querySelector(".demo-cont");
 
-[].slice.call(document.querySelectorAll(".fnc-slide__action-btn")).forEach(function($btn) {
-  $btn.addEventListener("click", function() {
+[].slice.call(document.querySelectorAll(".fnc-slide__action-btn")).forEach(function ($btn) {
+  $btn.addEventListener("click", function () {
     $demoCont.classList.toggle("credits-active");
   });
 });
 
-document.querySelector(".demo-cont__credits-close").addEventListener("click", function() {
+document.querySelector(".demo-cont__credits-close").addEventListener("click", function () {
   $demoCont.classList.remove("credits-active");
 });
 
-document.querySelector(".js-activate-global-blending").addEventListener("click", function() {
+document.querySelector(".js-activate-global-blending").addEventListener("click", function () {
   document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
 });
 
@@ -290,39 +292,39 @@ document.querySelector(".js-activate-global-blending").addEventListener("click",
 // up-arrow
 $(document).ready(function () {
   $(window).scroll(function () {
-      if ($(window).scrollTop() > 750) {
-          $('#up-arrow').css('opacity', '1')
-          $('#up-arrow').css('visibility', 'visible')
-      } else {
-          $('#up-arrow').css('opacity', '0')
-          $('#up-arrow').css('visibility', 'hidden')
+    if ($(window).scrollTop() > 750) {
+      $('#up-arrow').css('opacity', '1')
+      $('#up-arrow').css('visibility', 'visible')
+    } else {
+      $('#up-arrow').css('opacity', '0')
+      $('#up-arrow').css('visibility', 'hidden')
 
-      }
+    }
   });
   $('#up-arrow').click(function () {
-      $('html , body').animate({
-          scrollTop: 0
-      }, 1500)
+    $('html , body').animate({
+      scrollTop: 0
+    }, 1500)
   })
 });
 // up-arrow
 
-$('.signin').hover(function() {}, function() {
+$('.signin').hover(function () {}, function () {
   $(this).addClass('animateout');
-  setTimeout(function() {
+  setTimeout(function () {
     $('.signin').removeClass('animateout');
   }, 750);
 });
 
-$('.signin').on('click', function() {
+$('.signin').on('click', function () {
   $('.overlay').toggleClass('active');
   $('signinform-field').removeClass('focus');
   $('input').val('');
   return false;
 });
-$('input').focus(function() {
+$('input').focus(function () {
   $(this).parent().addClass('focus');
-}).blur(function() {
+}).blur(function () {
   if ($(this).val() == '') {
     $(this).parent().removeClass('focus');
   }
@@ -333,10 +335,10 @@ $('input').focus(function() {
 
   }
 });
-$('#btSubmit').on('click', function() {
+$('#btSubmit').on('click', function () {
   return false;
 });
-$('#btCancel').on('click', function() {
+$('#btCancel').on('click', function () {
   $('.overlay').removeClass('active');
   return false;
 });
@@ -358,10 +360,8 @@ $('#btCancel').on('click', function() {
 
 
 
-
-
-
-
-
-
-
+$(window).on('load',function(){
+	setTimeout(function(){ // allowing 3 secs to fade out loader
+	$('.page-loader').fadeOut('slow');
+	},1500);
+});

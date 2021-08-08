@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -35,6 +35,7 @@
                 color: #fff;
                 font-weight: 400;
                 font-size: 32px;
+
                 i {
                     color: #1a4da7;
                 }
@@ -58,6 +59,7 @@
                     font-weight: 500;
                     letter-spacing: 1.5px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
                     &:hover {
                         i {
                             transition: .4s;
@@ -250,56 +252,55 @@
     background: #f1f1f1;
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .col {
+}
+
+.col {
     flex: 1;
     height: 100vh;
     position: relative;
-  }
-  
-  .countdown-col {
-    background: url(https://dmitryvolkov.me/demo/flixtv/main/img/bg.jpg)
-      no-repeat center;
+}
+
+.countdown-col {
+    background: url(https://dmitryvolkov.me/demo/flixtv/main/img/bg.jpg) no-repeat center;
     background-size: cover;
-  }
-  
-  .time {
+}
+
+.time {
     color: #fff;
     text-transform: uppercase;
     width: 90%;
     display: flex;
     justify-content: center;
-  }
-  
-  .middle {
+}
+
+.middle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .time span {
+}
+
+.time span {
     padding: 0 14px;
     font-size: 10px;
-  }
-  
-  .time span div {
+}
+
+.time span div {
     font-size: 40px;
-  }
-  
-  .newslatter {
+}
+
+.newslatter {
     width: 90%;
-  }
-  
-  .newslatter h4 {
+}
+
+.newslatter h4 {
     font-style: italic;
     font-size: 12px;
-  }
-  
-  .newslatter input,
-  .newslatter button {
+}
+
+.newslatter input,
+.newslatter button {
     display: block;
     margin: 12px auto;
     width: 100%;
@@ -309,28 +310,28 @@
     border-radius: 30px;
     border: 1px solid #ddd;
     outline: none;
-  }
-  
-  .newslatter-button {
+}
+
+.newslatter-button {
     background: linear-gradient(125deg, #3498db, #34495e);
     color: #fff;
     cursor: pointer;
     transition: 0.4s;
-  }
-  
-  .newslatter-button:hover {
+}
+
+.newslatter-button:hover {
     opacity: 0.7;
-  }
-  
-  @media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 900px) {
     .col {
-      flex: 100%;
+        flex: 100%;
     }
-  }
-  
+}
 
 
-  // ----------------Footer start---------------
+
+// ----------------Footer start---------------
 
 footer {
     background-image: url(https://www.savebutonu.com/wp-content/uploads/2020/04/sex-education-3-sezon.jpg);
@@ -408,7 +409,7 @@ footer {
 // ----------------Footer End-----------------
 
 
-  // -------------- Responsive Start ---------------
+// -------------- Responsive Start ---------------
 
 @media(min-width:220px) and (max-width:991px) {
     .Header {
@@ -457,4 +458,3 @@ footer {
     background: linear-gradient(transparent, #0d1422, #1a4da7);
 
 }
-

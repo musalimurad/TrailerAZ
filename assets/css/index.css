@@ -262,7 +262,7 @@
 }
 
 .account {
-  margin-top: 65px;
+  margin-top: 0px;
   background-color: #151f30;
   padding: 29px;
   text-align: center;
@@ -1236,6 +1236,7 @@
 
 .home-slider .card-film img {
   width: 100%;
+  height: 300px;
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
 }
@@ -1504,7 +1505,7 @@
   -webkit-transform: translateY(-70px);
           transform: translateY(-70px);
   font-size: 60px;
-  width: 0%;
+  width: -1%;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
@@ -1517,6 +1518,7 @@
 .new-film .tag-content:hover img {
   -webkit-filter: blur(5px) brightness(0.5);
           filter: blur(5px) brightness(0.5);
+  cursor: pointer;
 }
 
 .new-film .tag-content:hover .bottom {
@@ -1569,7 +1571,7 @@
           justify-content: center;
   right: 6%;
   top: 6%;
-  width: 0%;
+  width: -1%;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
@@ -1805,6 +1807,11 @@ footer .overlay {
   .new-film .head-tag h3 {
     font-size: 17px;
   }
+  .new-film .tag-content .bottom {
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+    text-align: center;
+  }
   .new-film .tag-content .bottom p {
     display: none;
   }
@@ -1931,6 +1938,11 @@ footer .overlay {
   #Menu-content ul {
     padding-top: 285px;
   }
+  .new-film .tag-content .bottom {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    text-align: center;
+  }
   .new-film .tag-content .bottom p {
     display: none;
   }
@@ -1995,5 +2007,66 @@ footer .overlay {
 ::-webkit-scrollbar-thumb:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#0d1422), to(#1a4da7));
   background: linear-gradient(transparent, #0d1422, #1a4da7);
+}
+
+/* PRELOADER CSS */
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  background-image: url(https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+  z-index: 10000000;
+}
+
+.page-loader .txt {
+  color: #1a4da7;
+  text-align: center;
+  top: 40%;
+  position: relative;
+  font-weight: bold;
+}
+
+.page-loader .txt h1 {
+  font-size: 50px;
+  letter-spacing: 0.3rem;
+  color: #fff;
+}
+
+/* SPINNER ANIMATION */
+.spinner {
+  position: relative;
+  top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

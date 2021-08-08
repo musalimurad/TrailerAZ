@@ -38,6 +38,7 @@
                 color: #fff;
                 font-weight: 400;
                 font-size: 32px;
+
                 i {
                     color: #1a4da7;
                 }
@@ -61,6 +62,7 @@
                     font-weight: 500;
                     letter-spacing: 1.5px;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
                     &:hover {
                         i {
                             transition: .4s;
@@ -247,7 +249,7 @@
 // -------------Header-End---------------------
 
 .account {
-    margin-top: 65px;
+    margin-top: 0px;
     background-color: #151f30;
     padding: 29px;
     text-align: center;
@@ -1162,6 +1164,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
 
         img {
             width: 100%;
+            height: 300px;
             filter: brightness(0.5);
 
         }
@@ -1234,7 +1237,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
 
     .cover-text {
         display: flex;
-        
+
         justify-content: center;
         margin: auto;
 
@@ -1377,7 +1380,6 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
     background-color: #131720;
     padding-bottom: 85px;
     transition: .5s;
-
     .head-tag {
         text-align: center;
 
@@ -1425,7 +1427,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
                 transform: translateY(-70px);
 
                 font-size: 60px;
-                width: 0%;
+                width: -1%;
                 transition: .4s ease-in-out;
 
                 &:hover {
@@ -1440,6 +1442,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
         &:hover {
             img {
                 filter: blur(5px) brightness(0.5);
+                cursor: pointer;
             }
 
             .bottom {
@@ -1480,7 +1483,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
         justify-content: center;
         right: 6%;
         top: 6%;
-        width: 0%;
+        width: -1%;
         // margin-left: 62rem;
         // margin-top: -25rem;
         transition: .3s ease-in-out;
@@ -1551,7 +1554,7 @@ $cubOut: cubic-bezier(0.67, -0.16, 0.47, 1.61);
 
         .detail-img {
             position: relative;
-            
+
             img {
                 filter: brightness(0.5);
                 height: 350px;
@@ -1755,6 +1758,8 @@ footer {
 
         .tag-content {
             .bottom {
+                transform: translateY(-250px);
+                text-align: center;
                 p {
                     display: none;
                 }
@@ -1762,16 +1767,10 @@ footer {
         }
     }
 
-    #up-arrow {
-
-        // left: 84% !important;
-
-
-    }
-
-    .actors{
-        .detail-img{
-            img{
+   
+    .actors {
+        .detail-img {
+            img {
                 height: 200px !important;
             }
         }
@@ -1801,12 +1800,7 @@ footer {
         }
     }
 
-    #up-arrow {
-
-        // left: 84%;   
-
-
-    }
+ 
 }
 
 @media(min-width:240px) and (max-width:310px) {
@@ -2055,6 +2049,8 @@ footer {
     .new-film {
         .tag-content {
             .bottom {
+                transform: translateY(-100px);
+                text-align: center;
                 p {
                     display: none;
                 }
@@ -2062,9 +2058,9 @@ footer {
         }
     }
 
-    .actors{
-        .detail-img{
-            img{
+    .actors {
+        .detail-img {
+            img {
                 height: 200px !important;
             }
         }
@@ -2171,4 +2167,63 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, #0d1422, #1a4da7);
 
+}
+
+
+/* PRELOADER CSS */
+.page-loader{
+	width: 100%;
+	height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: fixed;
+	background-image: url(https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+	z-index: 10000000;
+	.txt{
+        h1{
+            font-size: 50px;
+		    letter-spacing: 0.3rem;
+            color: #fff;
+        }
+		color: #1a4da7;
+		text-align: center;
+		top: 40%;
+       
+		position: relative;
+		font-weight: bold;
+	}
+}
+
+/* SPINNER ANIMATION */
+.spinner {
+	position: relative;
+	top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
 }
